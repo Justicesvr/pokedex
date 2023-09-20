@@ -27,9 +27,9 @@ function handleClick(index) {
 NavBar.propTypes = {
   pokemonList: PropTypes.array,
   pokemonIndex: PropTypes.number,
+  setPokemonIndex: PropTypes.number,
   next: PropTypes.number,
   prev: PropTypes.number,
-  setPokemonIndex: PropTypes.number,
 }
 
   {/* {pokemonIndex > 0 ? (
