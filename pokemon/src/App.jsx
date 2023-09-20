@@ -33,22 +33,23 @@ import './App.css'
 
 function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
+  // const [pokemonIndex, setPokemonIndex] = useState(0);
 
-  const handleNextClick = () => {
-    setPokemonIndex(pokemonIndex + 1);
-  }
-   const handlePrevClick = () => {
-    setPokemonIndex(pokemonIndex - 1);
-  }
+  // const handleNextClick = () => {
+  //   setPokemonIndex(pokemonIndex + 1);
+  // }
+  //  const handlePrevClick = () => {
+  //   setPokemonIndex(pokemonIndex - 1);
+  // }
 
-  const next = handleNextClick;
-  const prev = handlePrevClick;
+  // const next = handleNextClick;
+  // const prev = handlePrevClick;
 
   return (
     <>
     <div>
     </div>
-    <NavBar next={next} prev={prev} pokemonList={pokemonList} pokemonIndex={pokemonIndex}/>
+    <NavBar pokemonList = {pokemonList} pokemonIndex = {pokemonIndex} setPokemonIndex = {setPokemonIndex}/>
     <div>
       <PokemonCard pokemon={pokemonList[pokemonIndex]}/>
     </div>
